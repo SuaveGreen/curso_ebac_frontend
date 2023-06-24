@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body > header {
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 16px 0;
+    color: rgb(243, 245, 132);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(57, 95, 87);
+}
+
+div > h2 {
+    color: rgb(243, 245, 132);
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+}
+
+header .container_esportes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(243, 245, 132);
+}
+
+
+/* Index no Titulo */
+header a {
+    text-decoration: none;
+    color: rgb(243, 245, 132);
+    font-family: Helvetica;
+}
+
+.container_esportes {
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+
+.articles_esportes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles_esportes article img {
+    /* height: 180px; */
+    width: 100%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles_esportes article {
+    margin-bottom: 16px;
+    width: 30%;
+}
+
+.articles_esportes article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+article {
+    color: rgb(243, 245, 132);
+    padding: 8px 8px 8px 8px;
+}
+
+.articles_esportes article a {
+    background-color: rgb(224, 240, 231);
+    color: rgb(57, 95, 87);
+    padding:  8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* .articles_esportes article a:hover {
+    text-decoration: underline;
+} */
+
+.articles_esportes article p, 
+.articles_esportes article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles_esportes article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32;
+}

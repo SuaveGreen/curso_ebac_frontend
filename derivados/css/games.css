@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body > header {
+    background-color: rgb(0, 0, 0, 0.6);
+    padding: 16px 0;
+    color: rgb(255, 255, 255);
+}
+
+div > h2 {
+    color: rgb(255, 255, 255);
+    padding: 8px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp3493599.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+header .container_games {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.container_games {
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+
+.articles_games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles_games article img {
+    /* height: 180px; */
+    width: 100%;
+}
+
+.articles_games article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles_games article {
+    margin-bottom: 16px;
+}
+
+.articles_games article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+article {
+    color: rgb(226, 226, 226);
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 8px 8px 8px 8px;
+}
+
+.articles_games article a {
+    background-color: rgba(126, 126, 126, 0.1);
+    color: rgb(255, 255, 255);
+    padding:  8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* .articles_games article a:hover {
+    text-decoration: underline;
+} */
+
+.articles_games article p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px 0px 0;
+}
+
+.articles_games article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32;
+}

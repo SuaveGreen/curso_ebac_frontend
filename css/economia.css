@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body > header {
+    background-color: rgba(194, 229, 235, 0.356);
+    padding: 16px 0;
+    color: rgb(81, 99, 61);
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(81, 99, 61);
+}
+
+div > h2 {
+    color: rgba(194, 229, 235, 0.356);
+    padding: 8px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+} */
+
+header .container_economia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(81, 99, 61);
+}
+
+
+/* header a {
+    text-decoration: none;
+    color: rgb(255, 60, 60);
+    font-family: 'PT Sans', sans-serif;
+} */
+
+.container_economia {
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+
+.articles_economia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles_economia article img {
+    /* height: 180px; */
+    width: 100%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles_economia article {
+    margin-bottom: 16px;
+    width: 30%;
+}
+
+.articles_economia article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+article {
+    color: rgba(194, 229, 235, 0.8);
+    padding: 8px 8px 8px 8px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.articles_economia article a {
+    background-color: rgba(194, 229, 235, 0.8);
+    color: rgb(81, 99, 61);
+    padding:  8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* .articles_economia article a:hover {
+    text-decoration: underline;
+} */
+
+.articles_economia article p, 
+.articles_economia article a {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 850;
+
+}
+
+.articles_economia article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32;
+}

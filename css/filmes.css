@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body > header {
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 16px 0;
+    color: rgb(255, 60, 60);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(105, 105, 105);
+}
+
+div > h2 {
+    color: rgb(255, 60, 60);
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+}
+
+header .container_filmes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(255, 60, 60);
+}
+
+
+/* Index no Titulo */
+header a {
+    text-decoration: none;
+    color: rgb(255, 60, 60);
+    font-family: Helvetica;
+}
+
+.container_filmes {
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+
+.articles_filmes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles_filmes article img {
+    /* height: 180px; */
+    width: 100%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles_filmes article {
+    margin-bottom: 16px;
+    width: 30%;
+}
+
+.articles_filmes article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+article {
+    color: aliceblue;
+    padding: 8px 8px 8px 8px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.articles_filmes article a {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    padding:  8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* .articles_filmes article a:hover {
+    text-decoration: underline;
+} */
+
+.articles_filmes article p, 
+.articles_filmes article a {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.articles_filmes article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32;
+}

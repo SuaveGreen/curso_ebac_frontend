@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <form>
+        <h1>Preencha os campos.</h1>
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+        <br/>
+        <br/>
+        <label for="email">E-mail:</label>
+        <input id="email" name="email" type="email" placeholder="exemplos@gmail.com" required />
+        <br/>
+        <br/>
+        <label for="senha">Senha:</label>
+        <input id="senha" name="senha" type="password" required minlength="4"/>
+        <br/>
+        <br/>
+        <label for="telefone">Telefone:</label>
+        <input id="telefone" name="telefone" type="tel" placeholder="Opcional" maxlength="11" />
+        <br/>
+        <br/>
+        <button type="submit">Salvar</button>
+        <button type="reset">Apagar</button>
+    </form>
+</body>
+</html>
