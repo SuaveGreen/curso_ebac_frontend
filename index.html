@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- ↓ font ↓ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#">
+                <h1>Calcular numeros positivos</h1>
+            </a>
+            <!-- <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Página principal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">
+                            Sobre nós
+                        </a>
+                    </li>
+                </ul>
+            </nav> -->
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h2>
+                Bem vindo!
+            </h2>
+            <h5>
+                Coloque valores nos campos abaixo, sendo o segundo campo, maior que o primeiro:
+            </h5>
+            <form id="form-calculo">
+                <label for="valor-um">
+                    Digite um valor:
+                </label>
+                <input id="valor-um" type="number" required min="0"/>
+                <p class="error-message">
+                    Coloque um valor válido!
+                </p>
+                <label for="valor-dois">
+                    Digite outro valor!
+                </label>
+                <input id="valor-dois" type="number" required min="0"/>
+                <div class="button">
+                    <button type="submit">
+                        Calcular
+                    </button>
+                    <button id="limpar" type="reset">
+                        Apagar
+                    </button>
+                </div>
+            </form>
+            <div class="mensagem">
+                <p class="success-message"></p>
+            </div>
+            <!-- <div class="resultado">
+            </div> -->
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
