@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(158, 157, 157);
+    padding: 16px 0;
+    font-weight: 50px;
+}
+
+header h1 {
+    margin-left: 50px;
+}
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    margin-right: 50px;
+}
+
+header nav li {
+    list-style: none;
+    display: inline;
+    font-size: 19px;
+    margin-right: 20px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section .container {
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(158, 157, 157);
+    color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    max-height: 1000px;
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    margin-left: 265px;
+    align-items: center;
+    margin-bottom: 15px;
+    max-width: 130px;
+    max-height: 29px;
+    height: 100%;
+    width: 100%;
+}
+
+/* ↓ INFORMAÇÕES ↓ */
+
+#label-info {
+    margin-left: 0;
+}
+
+#nome {
+    width: 250px;
+    margin-right: 115px;
+    margin-left: 20px;
+}
+
+#email {
+    width: 250px;
+    margin-right: 115px;
+    margin-left: 19px;
+}
+
+#telefone {
+    width: 125px;
+    margin-right: 242px;
+}
+
+#cpf {
+    width: 120px;
+    margin-left: 31px;
+    margin-right: 247px
+}
+
+/* ↑ INFORMAÇÕES ↑ */
+
+/* ↓ ENDEREÇO ↓ */
+
+#rua {
+    width: 350px;
+    margin-left: 33px;
+    margin-right: 17px;
+}
+
+#numero {
+    width: 80px;
+    margin-right: 287px;
+    margin-left: 3px;
+}
+
+#bairro {
+    width: 350px;
+    margin-left: 19px;
+    margin-right: 15px;
+}
+
+#cep {
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 267px;
+}
+
+/* ↑ ENDEREÇO ↑ */
+
+.form-campo {
+    /* margin-right: 100px; */
+    display: block;
+    /* align-items: center; */
+    padding: 10px;
+    height: 45px;
+    /* background-color: aqua; */
+}
+
+#cadastro {
+    /* background-color: #000; */
+    height: 400px;
+    max-height: 100%;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border-style:solid ;
+}
+
+.container-button {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(241, 241, 241);
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+}
