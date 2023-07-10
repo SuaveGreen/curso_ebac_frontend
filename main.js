@@ -25,8 +25,6 @@ $(document).ready(function() {
 
         $('#tarefa').val('')
 
-        $('td').fadeIn();
-
         $('#conteudo').click(function () {
             $(this).toggleClass("riscado");
         });
