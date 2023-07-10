@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body {
+    background-color: #e7e7e7;
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 50px;
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#tarefa {
+    max-width: 250px;
+    width: 100%;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+    border-radius: 8px;
+
+    display: flex;
+    max-height: 42px;
+    /* justify-content: space-between; */
+    /* margin-bottom: 10px; */
+
+}
+
+#adicionar {
+    background-color: #009432;
+    color:  #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 9px;
+    border-radius: 8px;
+
+    display: flex;
+    max-width: 120px;
+    width: 100%;
+    max-height: 47px;
+    /* justify-content: space-between; */
+    /* margin-bottom: 10px; */
+
+}
+
+table {
+    width: 100%;
+}
+
+table #th-tarefa {
+    max-width: 100px;
+}
+
+table #th-button {
+    max-width: 56px;
+}
+
+table th {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    padding: 16px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.riscado {
+    text-decoration: line-through;
+}
+
+#recolher,
+#expandir {
+    border: none;
+    background-color: #e7e7e7;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#conteudo {
+    cursor: pointer;
+}
