@@ -1,0 +1,17 @@
+div .form {
+    padding: 10px;
+    margin-left: 650px;
+}
+
+div .form label {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+div .form-check {
+    margin-top: 15px;
+}
+
+.form button {
+    margin-top: 15px;
+}
