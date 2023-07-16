@@ -8,7 +8,11 @@ div .form label {
     margin-bottom: 2px;
 }
 
-div .form-check {
+#novos-produtos {
+    margin-top: 15px;
+}
+
+#checkBox_novos-produtos {
     margin-top: 15px;
 }
 
