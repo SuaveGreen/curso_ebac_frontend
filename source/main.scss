@@ -1,0 +1,205 @@
+@use 'cores';
+@use 'reset';
+@use 'fonts';
+@use 'tamanhoTela';
+@use 'sass:math';
+
+@mixin container() {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin links() {
+    color: #fff;
+    text-decoration: none;
+}
+
+@mixin list() {
+    list-style: none;
+}
+
+@function pixelEM($alvoemPixel, $contextoPixel: 16px) {
+    @return math.div($alvoemPixel, $contextoPixel)+em;
+}
+
+body {
+    background-color: cores.$corFundo;
+}
+
+li {
+    @include list();
+}
+
+header {
+    background-color: cores.$corPrincipal;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+
+        @include container();
+    }
+
+    .branding {
+        a {
+            @include links();
+
+            h1 {
+                font-size: pixelEM(48px, 16px);
+            }
+
+        }
+    }
+
+    .menu {
+        display: flex;
+        li {
+            @include list();
+            
+            font-weight: bold;
+            margin-left: 24px;
+            a {
+                @include links();
+            }
+        }
+    }
+}
+
+section {
+    padding: 56px 0;
+
+    .container {
+        @include container();
+    }
+
+    .products {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 32.66%);
+        column-gap: 1%;
+        row-gap: 4%;
+        width: 100%;
+
+        .product-item {
+            img {
+                width: 100%;
+                border-radius: 16px;
+            }
+        }
+
+        .product-button {
+            display: block;
+            background-color: cores.$corConfirmacao;
+            color: #fff;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            margin-top: 8px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: lighten(cores.$corConfirmacao, 10%);
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: tamanhoTela.$tablet) {
+
+    header {
+        padding: 0 80px;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    section {
+
+        padding: 40px 0;
+
+        .container {
+            max-width: 80%;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+    
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+            
+            .product-item {
+
+                h4 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+
+                img {
+                    border-radius: 20px;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: tamanhoTela.$mobile) {
+
+    header {
+        font-size: 12px;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    section {
+        padding: 15px 0;
+
+        h2 {
+            margin-left: 10px;
+        }
+
+        .products {
+            padding-left: 10px;
+            padding-right: 10px;
+            display: block;
+            margin-top: 40px;
+            grid-template-columns: repeat(1, 96%);
+            column-gap: 1%;
+            row-gap: 4%;
+            width: 100%;
+
+            .product-item  {
+                margin-bottom: 40px;
+                
+                img {
+                    width: 80%;
+                    border-radius: 50px;
+                    margin-left: 35px;
+                    margin-bottom: 15px;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+}
