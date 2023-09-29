@@ -1,0 +1,125 @@
+@import 'maps.less';
+@brakepointMobile: ~"(max-width: 767px)";
+@brakepointTablet: ~"(max-width: 1023px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #colors[backgroundColor];
+
+    header {
+        background-color: #colors[headerBackgroundColor];
+        position: sticky;
+        top: 0;
+        left: 0;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 12.5vw;
+            
+            &__branding {
+                img {
+                    @media @brakepointMobile {
+                        width: 60%;
+                    }
+                }
+            }
+    
+            &__menu {
+                display: flex;
+                
+                li {
+                    font-weight: bold;
+                    margin-left: 24px;
+                        
+                    a {
+                        color: #colors[textColor];
+                        text-decoration: none;
+
+                        @media @brakepointMobile {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            @media @brakepointMobile {
+                align-items: center;
+                padding: 16px 3vw;
+            }
+        }
+    }
+
+    section {
+        padding: 56px 0;
+
+        .container {
+            max-width: 1024px;
+            width: 100%;
+            margin: 0 auto;
+
+            @media @brakepointTablet {
+                max-width: 80%;
+            }
+
+            &__products {
+                    margin-top: 40px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 32.66%);
+                    column-gap: 1%;
+                    row-gap: 4%;
+                    width: 100%;
+
+                    @media @brakepointMobile {
+                        display: block;
+                    }
+
+                    @media @brakepointTablet {
+                        grid-template-columns: repeat(2, 45%);
+                        column-gap: 10%;
+                        row-gap: 5%;
+                    }
+    
+                &__item {
+                    
+                    img {
+                        width: 100%;
+                        border-radius: 16px;
+                    }
+    
+                    &__button {
+                            display: block;
+                            background-color: #colors[buttonColor];
+                            color: #fff;
+                            text-align: center;
+                            padding: 8px 0;
+                            border-radius: 8px;
+                            margin-top: 8px;
+                            text-decoration: none;
+    
+                        &:hover {
+                            background-color: #colors[buttonColorHover];
+                        }
+                    }
+
+                    @media @brakepointMobile {
+                        margin-bottom: 32px;
+                    }
+
+                    @media @brakepointTablet {
+                        grid-template-columns: repeat(2, 48.5%);
+                        column-gap: 3%;
+                    }
+                }
+            }
+        }
+    }
+}
