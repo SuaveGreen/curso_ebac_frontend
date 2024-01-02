@@ -75,9 +75,9 @@ const meuCaminhao1 = new Caminhao (3955, 7140 , "Alimentos", 5, 52, "Volvo Fh 54
 // minhaMoto1.mudarMarcha();
 // meuCaminhao1.mudarMarcha();
 
-// console.log(meuCarro1);
-// console.log(meuCarroEletrico1);
-// console.log(minhaMoto1);
-// console.log(meuCaminhao1);
+console.log(meuCarro1);
+console.log(meuCarroEletrico1);
+console.log(minhaMoto1);
+console.log(meuCaminhao1);
 
 console.log(meuCarro1 instanceof CarroPopular)
