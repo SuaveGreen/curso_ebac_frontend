@@ -17,5 +17,7 @@ function calculaMultiplicacao(num1: any, num2: any): any {
 }
 
 console.log(dizOla('Pedro'))
+console.log(dizOla(''))
 
 console.log(calculaMultiplicacao(173950, 25474))
+console.log(calculaMultiplicacao(0, 0))
