@@ -63,9 +63,10 @@ function passouDeAno3() {
 }
     
 passouDeAno1()
+console.log('-----')
 passouDeAno2()
+console.log('-----')
 passouDeAno3()
-
 
 //      ↓ Ideia que tive para fazer retorno caso a nota seja >= 6 e se passou de ano ↓      \\
 
