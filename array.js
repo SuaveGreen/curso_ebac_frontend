@@ -67,17 +67,17 @@ passouDeAno()
 //     }
 // }
 
-//      ↓ TANTO NESTA FUNÇÃO QUANTO NA PRÓXIMA, EU PEGARIA A VARIÁVEL (notaValida) 
-//      ↓ E DEPENDENDO DO VALOR RETORNARIA RETORNARIA POSITIVO SENÃO NEGATIVO.
-//      ↓ PORÉM, ALÉM DE NÃO CONSEGUIR PEGAR O RESULTADO FA FUNÇÃO, FIQUEI NA DÚVIDA 
-//      ↓ SE, ERA CORRETO FAZER UMA CHAMADA DESTA FUNÇÃO DENTRO DAS OUTRAS FUNÇÃO
+//      ↓ TANTO NESTA FUNÇÃO QUANTO NA PRÓXIMA, EU PEGARIA A VARIÁVEL 'notaValida' 
+//      ↓ E DEPENDENDO DO VALOR RETORNARIA POSITIVO SENÃO NEGATIVO.
+//      ↓ PORÉM, ALÉM DE NÃO CONSEGUIR PEGAR O RESULTADO DA FUNÇÃO, FIQUEI NA DÚVIDA 
+//      ↓ SE, ERA CORRETO FAZER UMA CHAMADA DESTA FUNÇÃO DENTRO DAS OUTRAS FUNÇÃO.
 
 // function passouDeAno(aluno, notaValida) {
 //     notaValida ? console.log(`Parabéns ${aluno}, passou de ano`) : console.log(`${aluno}, infelizmente você reprovou`);
 // }
 
 //      ↓ JÁ AQUI, RETORNARIA APENAS QUEM TINHA A NOTA MAIOR QUE 6, MAS EM AMBAS 
-//      ↓ AS FUNÇÕES, NÃO CONSEGUI PEGAR O RESULTADO DA VARIÁVEL (notaValida) E USAR.
+//      ↓ AS FUNÇÕES, NÃO CONSEGUI PEGAR O RESULTADO DA VARIÁVEL 'notaValida' E USAR.
 
 // function apenasQuemPassou(aluno, notaValida) {
 //     if (notaValida >= 6) {
@@ -87,8 +87,8 @@ passouDeAno()
 //     }
 // }
 
-//      ↓ ALÉM DE SEMPRE SER NEGATIVO A VARIÁVEL (notaValida), NÃO CONSEGUI 
-//      ↓ ACESSAR O VALOR (alunos.nomes) NEM (alunos.notas)
+//      ↓ ALÉM DE SEMPRE SER NEGATIVO A VARIÁVEL 'notaValida', NÃO CONSEGUI 
+//      ↓ ACESSAR O VALOR 'alunos.nomes' NEM 'alunos.notas'
 
 // passouDeAno(alunos.nomes)
 // apenasQuemPassou(alunos.nomes)
